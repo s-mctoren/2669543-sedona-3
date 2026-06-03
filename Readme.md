@@ -2,6 +2,7 @@
 
 * Студент: [Анастасия Торгова](https://up.htmlacademy.ru/htmlcss-individual/3/user/2669543).
 * Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
+* Сайт: [проект «Седонна»](https://s-mctoren.github.io/2669543-sedona-3/).
 
 ---
 
