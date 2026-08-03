@@ -1,0 +1,286 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/ptsans-400.woff2) format(woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/ptsans-700.woff2) format(woff2);
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333333;
+  text-align: center;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/* Common */
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.button {
+  border-radius: 4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #756157;
+}
+
+.subscribe.button {
+  background-color: #82b3d3;
+  font-size: 20px;
+  line-height: 36px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.title {
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.white {
+  color: #ffffff;
+}
+
+/* .visually-hidden {
+  visibility: hidden;
+} */
+
+/* Page Header */
+
+.navigation-link {
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+a.navigation-link.current {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #756257;
+}
+
+.navigation-link.button {
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+/* Hero */
+
+.hero-block {
+  background-color: #bdbdbd;
+  background-image: url(../images/index/ornament.svg),
+    url(../images/index/index-background.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom, top;
+  background-size: 100% auto, cover;
+}
+
+/* Message */
+
+.message.title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.message.description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.message.accent {
+  background-color: #bdbdbd;
+  background-image: url(../images/index/subscribe.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.message.button {
+  font-size: 20px;
+  line-height: 36px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Advantages */
+
+.advantages.title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.advantages-item:nth-child(odd) {
+  background-color: #83b3d333;
+}
+
+.advantages-item:nth-child(even) {
+  background-color: #83b3d31f;
+}
+
+.advantages-item:first-child,
+.advantages-item:last-child {
+  background-color: #82b3d3;
+}
+
+/* Services */
+
+.services.title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.services-item:nth-child(odd) {
+  background-color: #83b3d31f;
+}
+
+/* Catalog Header (Filters) */
+
+.catalog-header {
+  background-color: #bdbdbd;
+  background-image: url(../images/catalog/catalog-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  text-align: left;
+  padding: 35px 70px 70px 70px;
+}
+
+.catalog-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-list {
+  display: inline;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.breadcrumbs-item {
+  display: inherit;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+}
+
+.filter-list.prices {
+  display: flex;
+}
+
+.filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.filter-item {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.submit.button {
+  background-color: #82b3d3;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.reset.button {
+  background-color: transparent;
+  padding-left: 57.5px;
+  padding-right: 57.5px;
+}
+
+/* Catalog Items (Filter Results) */
+
+.item-name {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.item-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.details.button {
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.favorite.button {
+  background-color: #82b3d3;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.favorite.button.is-added {
+  background-color: #7db54f;
+}
+
+/* Page Footer */
+
+.phone-link {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 40px;
+}
