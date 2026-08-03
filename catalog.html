@@ -27,18 +27,18 @@
         </ul>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link favorites" href="#">
               <span class="visually-hidden">Отелей в избранном:</span>
               <span class="icon-favorites-badge">12</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <a class="navigation-link button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -114,7 +114,7 @@
             <fieldset class="filter-group">
               <legend class="filter-title">Стоимость, ₽:</legend>
 
-              <ul class="filter-list">
+              <ul class="filter-list prices">
                 <li class="filter-item">
                   <label class="control">
                     от <input type="number" name="price-min" min="0" value="0">
@@ -128,8 +128,8 @@
               </ul>
             </fieldset>
 
-            <button class="submit-button" type="submit">Применить</button>
-            <button class="reset-button" type="reset">Сбросить</button>
+            <button class="submit button" type="submit">Применить</button>
+            <button class="reset button" type="reset">Сбросить</button>
           </form>
         </section>
       </header>
@@ -171,8 +171,8 @@
             </div>
 
             <div class="item-controls">
-              <a class="details-button" href="#">Подробнее</a>
-              <button class="favorite-button" type="button">В избранное</button>
+              <a class="details button" href="#">Подробнее</a>
+              <button class="favorite button" type="button">В избранное</button>
             </div>
 
             <div class="item-rating">
@@ -193,8 +193,8 @@
             </div>
 
             <div class="item-controls">
-              <a class="details-button" href="#">Подробнее</a>
-              <button class="favorite-button is-added" type="button">В избранном</button>
+              <a class="details button" href="#">Подробнее</a>
+              <button class="favorite button is-added" type="button">В избранном</button>
             </div>
 
             <div class="item-rating">
@@ -215,8 +215,8 @@
             </div>
 
             <div class="item-controls">
-              <a class="details-button" href="#">Подробнее</a>
-              <button class="favorite-button" type="button">В избранное</button>
+              <a class="details button" href="#">Подробнее</a>
+              <button class="favorite button" type="button">В избранное</button>
             </div>
 
             <div class="item-rating">
@@ -237,8 +237,8 @@
             </div>
 
             <div class="item-controls">
-              <a class="details-button" href="#">Подробнее</a>
-              <button class="favorite-button" type="button">В избранное</button>
+              <a class="details button" href="#">Подробнее</a>
+              <button class="favorite button" type="button">В избранное</button>
             </div>
 
             <div class="item-rating">
@@ -265,7 +265,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <span class="pagination-gap">…</span>
+            <span class="pagination-link gap">…</span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -274,8 +274,8 @@
       </section>
 
       <section class="message">
-        <h2 class="message-title">Подпишитесь на рассылку</h2>
-        <p class="message-description">Только полезная информация и никакого спама, <br>честное бойскаутское!
+        <h2 class="message title">Подпишитесь на рассылку</h2>
+        <p class="message description">Только полезная информация и никакого спама, <br>честное бойскаутское!
         </p>
 
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
