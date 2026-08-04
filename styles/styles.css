@@ -387,18 +387,37 @@ button {
 /* Page Footer */
 
 .page-footer {
-  padding: 40px 70px 30px;
-}
-
-.footer-content {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
+  padding: 40px 70px 30px;
 }
 
 .footer-section {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-link {
+  display: flex;
+  width: 48px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 }
 
 .socials-vkontakte {
@@ -414,7 +433,17 @@ button {
 }
 
 .phone-link {
-  text-transform: uppercase;
   font-size: 40px;
   line-height: 40px;
+  text-transform: uppercase;
+}
+
+.developer-link {
+  display: flex;
+  width: 115px;
+  height: 33px;
+  background-image: url("../images/logos/htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
 }
