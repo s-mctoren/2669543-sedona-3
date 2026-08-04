@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-weight: 400;
   font-style: normal;
-  src: url(../fonts/ptsans-400.woff2) format(woff2);
+  src: url("../fonts/ptsans-400.woff2") format(woff2);
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-weight: 700;
   font-style: normal;
-  src: url(../fonts/ptsans-700.woff2) format(woff2);
+  src: url("../fonts/ptsans-700.woff2") format(woff2);
   font-display: swap;
 }
 
@@ -127,7 +127,8 @@ button {
 .hero-block {
   background-color: #bdbdbd;
   background-image:
-    url(../images/index/ornament.svg), url(../images/index/index-background.jpg);
+    url("../images/index/ornament.svg"),
+    url("../images/index/index-background.jpg");
   background-repeat: no-repeat;
   background-position: bottom, top;
   background-size:
@@ -171,7 +172,7 @@ button {
 
 .message.accent {
   background-color: #bdbdbd;
-  background-image: url(../images/index/subscribe.jpg);
+  background-image: url("../images/index/subscribe.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -234,7 +235,7 @@ button {
 
 .catalog-header {
   background-color: #bdbdbd;
-  background-image: url(../images/catalog/catalog-background.jpg);
+  background-image: url("../images/catalog/catalog-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
