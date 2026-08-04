@@ -401,6 +401,18 @@ button {
   display: flex;
 }
 
+.socials-vkontakte {
+  background-image: url("../images/icons/vkontakte.svg");
+}
+
+.socials-telegram {
+  background-image: url("../images/icons/telegram.svg");
+}
+
+.socials-youtube {
+  background-image: url("../images/icons/youtube.svg");
+}
+
 .phone-link {
   text-transform: uppercase;
   font-size: 40px;
