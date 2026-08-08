@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -429,6 +433,9 @@ button {
 /* Catalog Items (Filter Results) */
 
 .catalog-filters-result {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   padding: 50px 70px 60px;
 }
 
@@ -437,15 +444,52 @@ button {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 46.5px;
 }
 
 .result-settings {
   display: flex;
 }
 
+.result-sort {
+  border: 2px solid #e5e5e5;
+  background-color: white;
+  border-radius: 4px;
+  padding: 14px 20px;
+  width: 292px;
+  font-size: 18px;
+}
+
 .result-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.result-item {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  border: solid 1px #e5e5e5;
+  padding: 20px;
+
+  gap: 20px;
+}
+
+.item-name {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.item-details,
+.item-controls,
+.item-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -456,9 +500,22 @@ button {
   text-transform: uppercase;
 }
 
+.rating-stars {
+  display: flex;
+  gap: 6px;
+}
+
+.icon-star {
+  background: url("../images/icons/star.svg") no-repeat center;
+  height: 17px;
+  width: 18px;
+  display: inline-block;
+}
+
 .result-view-list {
   display: flex;
   margin-left: 70px;
+  gap: 8px;
 }
 
 .result-view-item {
@@ -478,23 +535,34 @@ button {
   text-transform: uppercase;
 }
 
-.details.button {
+.details.button,
+.favorite.button,
+.rating-text {
   font-size: 16px;
   line-height: 20px;
-  padding-left: 26px;
-  padding-right: 26px;
+  width: 140px;
 }
 
 .favorite.button {
   background-color: #82b3d3;
-  font-size: 16px;
-  line-height: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .favorite.button.is-added {
   background-color: #7db54f;
+}
+
+.rating-text {
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #e5e5e5;
 }
 
 .pagination-list {
