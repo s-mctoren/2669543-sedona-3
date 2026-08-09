@@ -1074,6 +1074,16 @@ dialog::backdrop {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
+  opacity: 90%;
+}
+
+.socials-link:not(:disabled):hover,
+.socials-link:not(:disabled):focus {
+  opacity: 100%;
+}
+
+.socials-link:not(:disabled):active {
+  opacity: 50%;
 }
 
 .socials-vkontakte {
@@ -1094,14 +1104,32 @@ dialog::backdrop {
   text-transform: uppercase;
 }
 
+.phone-link:hover,
+.phone-link:focus-visible,
+.phone-link:active {
+  color: #756157;
+}
+
+.phone-link:active {
+  opacity: 0.3;
+}
+
 .developer-link {
   display: flex;
-  width: 115px;
-  height: 33px;
-  background-image: url("../images/logos/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
+}
+
+.logo-developer {
+  fill: #000000;
+}
+
+.logo-developer:hover,
+.logo-developer:focus-visible,
+.logo-developer:active {
+  fill: #756157;
+}
+
+.logo-developer:active {
+  opacity: 0.3;
 }
 
 /* Button Styles */
