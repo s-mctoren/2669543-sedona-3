@@ -42,7 +42,7 @@
               </a>
             </li>
             <li class="navigation-controls-item">
-              <a class="navigation-controls-link nav-button" href="#">Хочу сюда!</a>
+              <a class="navigation-controls-link nav-button brown-button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -69,6 +69,7 @@
           <ul class="advantages-list">
             <li class="advantages-item">
               <h3 class="advantages-title white">Настоящий <br>городок</h3>
+              <hr class="advantages-divider">
               <p class="advantages-description white">Седона — не аттракцион для <br>туристов, там течёт своя <br>жизнь
               </p>
             </li>
@@ -78,22 +79,25 @@
             </li>
             <li class="advantages-item">
               <h3 class="advantages-title">Небольшая <br>площадь</h3>
+              <hr class="advantages-divider">
               <p class="advantages-description">Все достопримечательности <br>находятся очень близко</p>
             </li>
             <li class="advantages-item">
               <h3 class="advantages-title">Красивая <br>дорога</h3>
+              <hr class="advantages-divider">
               <p class="advantages-description">Ехать в Седону из Лас-Вегаса <br>совсем не скучно!</p>
             </li>
             <li class="advantages-item">
               <h3 class="advantages-title">Мало <br>туристов</h3>
+              <hr class="advantages-divider">
               <p class="advantages-description">Большинство едет в Гранд-<br>Каньон и толпится там</p>
             </li>
             <li class="advantages-picture">
               <img src="images/index/photo-2.jpg" alt="Красная каменная арка Моста Дьявола" width="800" height="385">
             </li>
             <li class="advantages-item">
-
               <h3 class="advantages-title white">Там есть <br>мост дьявола</h3>
+              <hr class="advantages-divider">
               <p class="advantages-description white">Да, по нему можно пройти! <br>Если вы осмелитесь, <br>разумеется
               </p>
             </li>
@@ -109,16 +113,16 @@
           <h2 class="visually-hidden">Услуги</h2>
 
           <ul class="services-list">
-            <li class="services-item">
+            <li class="services-item icon-house">
               <h3 class="services-title">Жильё</h3>
               <p class="services-description">Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!</p>
             </li>
-            <li class="services-item">
+            <li class="services-item icon-food">
               <h3 class="services-title">Еда</h3>
               <p class="services-description">Всегда заказывайте <br>топовый фирменный бургер, <br>вы не
                 разочаруетесь!</p>
             </li>
-            <li class="services-item">
+            <li class="services-item icon-gift">
               <h3 class="services-title">Сувениры</h3>
               <p class="services-description">Не только китайского, <br>но и настоящего местного <br>производства!</p>
             </li>
@@ -130,7 +134,7 @@
           <p class="message-description">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения
             гостиниц в Седоне</p>
 
-          <button class="message button" type="button">Поиск гостиницы в Седоне</button>
+          <button class="message button brown-button" type="button" popovertarget="search-dialog">Поиск гостиницы в Седоне</button>
         </section>
 
         <section class="message subscribe-section white">
@@ -142,9 +146,74 @@
             <label class="visually-hidden" for="subscription-email">Укажите свой e-mail:</label>
             <input class="subscribe-input" type="email" id="subscription-email" name="user-email"
               placeholder="Ваш e-mail" required>
-            <button class="subscribe button" type="submit">Подписаться</button>
+            <button class="subscribe button blue-button" type="submit">Подписаться</button>
           </form>
         </section>
+
+        <dialog id="search-dialog" class="search-dialog" popover>
+          <div class="search-dialog-header">
+            <h2 class="dialog-title">Поиск гостиницы в Седоне</h2>
+            <button popovertarget="search-dialog" popovertargetaction="hide" class="close-button">
+              <span class="visually-hidden">Закрыть диалог</span>
+            </button>
+          </div>
+          <form action="" class="search-dialog-form">
+            <label for="check-in-date" class="search-dialog-label">Дата заезда:</label>
+            <div class="search-dialog-container-long">
+              <input type="text" name="check-in-date" id="check-in-date" value="27 апреля 2020"
+                class="search-dialog-input search-dialog-input-date">
+              <p class="dialog-message error">Мы не можем отправить вас в прошлое.</p>
+            </div>
+            <label for="check-out-date" class="search-dialog-label">Дата выезда:</label>
+            <div class="search-dialog-container-long">
+              <input type="text" name="check-out-date" id="check-out-date" value="1 сентября 2023"
+                class="search-dialog-input search-dialog-input-date">
+              <p class="dialog-message info">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+            <label for="adults-number" class="search-dialog-label">Взрослые:</label>
+            <span class="input-number-container">
+              <button class="minus-button">
+                <span class="visually-hidden">
+                  Убрать один
+                </span>
+              </button>
+              <input type="number" name="adults-number" id="adults-number" value="2" class="search-dialog-input search-dialog-input-number">
+              <button class="plus-button">
+                <span class="visually-hidden">
+                  Добавить один
+                </span>
+              </button>
+            </span>
+            <div class="children-container">
+              <div class="children-label-container">
+                <label for="children-number" class="search-dialog-label">Дети:</label>
+                <span class="icon-info">
+                  <span class="visually-hidden">info children</span>
+                  <span class="children-tooltip" role="tooltip">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                    размещаются бесплатно.
+                  </span>
+                </span>
+              </div>
+              <span class="input-number-container">
+                <button class="minus-button">
+                  <span class="visually-hidden">
+                    Убрать один
+                  </span>
+                </button>
+                <input type="number" name="children-number" id="children-number" value="2"
+                  class="search-dialog-input search-dialog-input-number">
+                <button class="plus-button">
+                  <span class="visually-hidden">
+                    Добавить один
+                  </span>
+                </button>
+              </span>
+            </div>
+            <button type="submit" class="search-dialog-submit blue-button">Найти</button>
+          </form>
+
+        </dialog>
       </main>
 
 
