@@ -660,6 +660,7 @@ dialog::backdrop {
   justify-content: space-between;
   width: 100%;
 }
+
 .filter-group-container {
   display: flex;
   gap: 70px;
@@ -668,6 +669,7 @@ dialog::backdrop {
 .filter-group {
   padding: 0;
   margin: 0;
+  border: none;
 }
 
 .filter-title {
@@ -677,11 +679,59 @@ dialog::backdrop {
 .filter-list {
   display: grid;
   gap: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 .control {
   display: flex;
+  align-items: center;
   column-gap: 16px;
+  cursor: pointer;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control-input {
+  appearance: none;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.control-input:focus-visible {
+  outline: 3px solid #83b3d3;
+}
+
+.control-input.checkbox {
+  border-radius: 4px;
+}
+
+.control-input.checkbox:checked {
+  background-color: white;
+  background-image: url("../images/icons/checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 10px;
+}
+
+.control-input.radio {
+  border-radius: 50% 50%;
+}
+
+.control-input.radio:checked {
+  background-color: white;
+  background-image: url("../images/icons/radio.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px 10px;
 }
 
 .filter-item {
