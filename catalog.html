@@ -99,7 +99,8 @@
                   <ul class="filter-list">
                     <li class="filter-item">
                       <label class="control">
-                        <input class="control-input radio" type="radio" name="type-of-housing" value="hotel" checked>Гостиница
+                        <input class="control-input radio" type="radio" name="type-of-housing" value="hotel"
+                          checked>Гостиница
                       </label>
                     </li>
                     <li class="filter-item">
@@ -109,7 +110,8 @@
                     </li>
                     <li class="filter-item">
                       <label class="control">
-                        <input class="control-input radio" type="radio" name="type-of-housing" value="apartments">Апартаменты
+                        <input class="control-input radio" type="radio" name="type-of-housing"
+                          value="apartments">Апартаменты
                       </label>
                     </li>
                   </ul>
@@ -133,9 +135,16 @@
                       </label>
                       <input type="number" name="price-max" value="9000" class="price-max input-text input-number">
                     </li>
-                    <div class="filter-sliders-control">
-                      <input id="fromSlider" type="range" value="0" min="0" max="10000" class="fromSlider" />
-                    </div>
+                    <li class="filter-slider-control">
+                      <div class="range-background"></div>
+                      <div class="range-background-active"></div>
+                      <button class="range-button button-min" type="button">
+                        <span class="visually-hidden">Установить минимальную стоимость</span>
+                      </button>
+                      <button class="range-button button-max" type="button">
+                        <span class="visually-hidden">Установить максимальную стоимость</span>
+                      </button>
+                    </li>
                   </ul>
                 </fieldset>
                 <div class="filter-button-container">

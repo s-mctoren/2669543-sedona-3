@@ -616,16 +616,17 @@ dialog::backdrop {
   font-size: 60px;
   line-height: 78px;
   margin: 0;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs-list {
-  /* position: relative; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-item:not(:first-child) {
@@ -739,13 +740,54 @@ dialog::backdrop {
 }
 
 .filter-list-prices {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2px;
 }
 
-.filter-sliders-control {
+.filter-slider-control {
+  position: relative;
   grid-column: span 2;
+  height: 20px;
+}
+
+.range-background {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #ffffff4d;
+  top: 48px;
+}
+
+.range-background-active {
+  position: absolute;
+  background-color: #ffffff;
+  width: 226px;
+  height: 4px;
+  top: 48px;
+}
+
+.range-button {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  top: 40px;
+}
+
+.range-button:hover{
+  background-color: #e5e5e5;
+}
+
+.range-button:focus {
+  background-color: #e5e5e5;
+  outline: solid 3px #83b3d3;
+}
+
+.range-button.button-max {
+  left: 206px
 }
 
 .price-min,
