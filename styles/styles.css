@@ -256,7 +256,7 @@ button {
   display: flex;
 }
 
-.subscribe-input {
+.subscribe-input.input-text {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
