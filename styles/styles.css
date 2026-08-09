@@ -686,7 +686,7 @@ dialog::backdrop {
 .control {
   display: flex;
   align-items: center;
-  column-gap: 16px;
+  gap: 16px;
   cursor: pointer;
 }
 
@@ -704,6 +704,7 @@ dialog::backdrop {
   width: 20px;
   height: 20px;
   margin: 0;
+  flex-shrink: 0;
 }
 
 .control-input:focus-visible {
@@ -715,7 +716,6 @@ dialog::backdrop {
 }
 
 .control-input.checkbox:checked {
-  background-color: white;
   background-image: url("../images/icons/checkmark.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -727,7 +727,6 @@ dialog::backdrop {
 }
 
 .control-input.radio:checked {
-  background-color: white;
   background-image: url("../images/icons/radio.svg");
   background-repeat: no-repeat;
   background-position: center;
