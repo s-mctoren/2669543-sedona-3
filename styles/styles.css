@@ -1079,10 +1079,6 @@ dialog::backdrop {
   width: 140px;
 }
 
-.favorite.button.is-added {
-  background-color: #7db54f;
-}
-
 .rating-text {
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -1240,6 +1236,10 @@ dialog::backdrop {
 
 .grey-button {
   background-color: #f2f2f2;
+}
+
+.green-button {
+  background-color: #7db54f;
 }
 
 .blue-button:hover,
