@@ -96,6 +96,18 @@ button {
   padding: 0 70px;
 }
 
+.page-header .logo:hover {
+  opacity: 0.9;
+}
+
+.page-header .logo:focus-visible {
+  outline: 2px solid #68a2ca;
+}
+
+.page-header .logo:active {
+  opacity: 0.7;
+}
+
 .navigation {
   display: flex;
   width: 100%;
@@ -134,6 +146,30 @@ button {
   bottom: 0;
   height: 2px;
   background: #756257;
+}
+
+.navigation-menu-link:not(.current):hover {
+  opacity: 0.6;
+}
+
+.navigation-menu-link:focus-visible {
+  outline: 2px solid #68a2ca;
+  border: none;
+}
+
+.navigation-menu-link:not(.current):active {
+  opacity: 0.3;
+}
+
+.icon-link:hover,
+.icon-link:focus-visible,
+.icon-link:active {
+  opacity: 0.6;
+}
+
+.icon-link:focus-visible {
+  outline: 2px solid #68a2ca;
+  border: none;
 }
 
 .search {
@@ -427,7 +463,6 @@ dialog::backdrop {
   top: 64px;
   right: 50px;
   border: none;
-  background-color: #f2f2f2;
   background-image: url("../images/icons/close.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -466,7 +501,6 @@ dialog::backdrop {
 
 .search-dialog-input {
   height: 48px;
-  background-color: #f2f2f2;
   border: none;
   font-weight: 700;
   font-size: 18px;
@@ -549,6 +583,7 @@ dialog::backdrop {
   display: inline-block;
   border-radius: 50%;
   position: relative;
+  cursor: help;
 }
 
 .children-tooltip {
@@ -629,19 +664,31 @@ dialog::backdrop {
   margin-bottom: 40px;
 }
 
-.breadcrumbs-item:not(:first-child) {
-  padding: 0 28px;
+.breadcrumbs-item {
+  color: #ffffff;
 }
 
-/* .breadcrumbs-item:last-child::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 4px;
-  right: -15px;
+.breadcrumbs-item:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-item:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-item:not(:first-child) {
+  padding-left: 28px;
+}
+
+.breadcrumbs-item.icon-arrow {
+  background-image: url("../images/icons/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
   width: 8px;
   height: 21px;
-} */
+  opacity: 1;
+}
 
 .breadcrumbs-link {
   color: #ffffff;
@@ -651,9 +698,13 @@ dialog::backdrop {
   display: flex;
   background-image: url("../images/icons/home.svg");
   background-repeat: no-repeat;
-  background-size: auto;
   width: 12px;
   height: 12px;
+}
+
+.icon-home:focus-visible {
+  outline: 2px solid #68a2ca;
+  border: none;
 }
 
 .filter-form {
@@ -777,7 +828,7 @@ dialog::backdrop {
   top: 40px;
 }
 
-.range-button:hover{
+.range-button:hover {
   background-color: #e5e5e5;
 }
 
@@ -787,7 +838,7 @@ dialog::backdrop {
 }
 
 .range-button.button-max {
-  left: 206px
+  left: 206px;
 }
 
 .price-min,
@@ -844,10 +895,28 @@ dialog::backdrop {
 }
 
 .reset.button {
+  box-sizing: border-box;
   background-color: transparent;
-  padding-left: 57.5px;
-  padding-right: 57.5px;
+  width: 191px;
+  height: 36px;
   margin-top: auto;
+  border: none;
+}
+
+.reset.button:hover {
+  opacity: 0.6;
+}
+
+.reset.button:focus-visible {
+  outline: 2px solid #83b3d3;
+}
+
+.reset.button:active {
+  opacity: 0.3;
+}
+
+.reset-button:disabled {
+  opacity: 0.1;
 }
 
 /* Catalog Items (Filter Results) */
@@ -889,6 +958,20 @@ dialog::backdrop {
   background-position-x: right 20px;
   background-position-y: center;
   cursor: pointer;
+}
+
+.result-sort:hover {
+  border: 2px solid #68a2ca;
+}
+
+.result-sort:focus-visible {
+  border: 2px solid #68a2ca;
+  outline: none;
+}
+
+.result-sort:disabled {
+  color: #000000;
+  opacity: 0.3;
 }
 
 .result-list {
@@ -964,6 +1047,16 @@ dialog::backdrop {
 
 .result-view-button.selected {
   border-color: #000000;
+}
+
+.result-view-button:hover,
+.result-view-button:active {
+  border-color: #000000;
+}
+
+.result-view-button:focus-visible {
+  border: 2px solid #68a2ca;
+  outline: none;
 }
 
 .icon-tile {
@@ -1069,33 +1162,26 @@ dialog::backdrop {
 
 .socials-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
-  opacity: 90%;
+  color: #83b3d3;
 }
 
-.socials-link:not(:disabled):hover,
-.socials-link:not(:disabled):focus {
-  opacity: 100%;
+.socials-link:hover,
+.socials-link:focus-visible,
+.socials-link:active {
+  color: #68a2ca;
+  outline: none;
 }
 
-.socials-link:not(:disabled):active {
-  opacity: 50%;
+.socials-link:focus-visible {
+  outline: none;
 }
 
-.socials-vkontakte {
-  background-image: url("../images/icons/vkontakte.svg");
-}
-
-.socials-telegram {
-  background-image: url("../images/icons/telegram.svg");
-}
-
-.socials-youtube {
-  background-image: url("../images/icons/youtube.svg");
+.socials-link:active {
+  opacity: 0.3;
 }
 
 .phone-link {
@@ -1108,6 +1194,10 @@ dialog::backdrop {
 .phone-link:focus-visible,
 .phone-link:active {
   color: #756157;
+}
+
+.phone-link:focus-visible {
+  outline: none;
 }
 
 .phone-link:active {
@@ -1128,35 +1218,68 @@ dialog::backdrop {
   fill: #756157;
 }
 
+.developer-link:focus-visible {
+  opacity: 0.7;
+  outline: none;
+}
+
+.logo-developer:focus-visible {
+  outline: none;
+}
+
 .logo-developer:active {
   opacity: 0.3;
 }
 
 /* Button Styles */
+
 .blue-button {
   background-color: #82b3d3;
   color: white;
 }
 
-.blue-button:not(:disabled):hover,
-.blue-button:not(:disabled):focus,
-.search-dialog-submit:not(:disabled):active {
+.grey-button {
+  background-color: #f2f2f2;
+}
+
+.blue-button:hover,
+.blue-button:focus-visible,
+.search-dialog-submit:active {
   background-color: #68a2ca;
 }
 
-.brown-button:not(:disabled):hover,
-.brown-button:not(:disabled):focus {
+.brown-button:hover,
+.brown-button:focus-visible {
   background-color: #615048;
 }
 
-.green-button:not(:disabled):hover,
-.green-button:not(:disabled):focus {
+.green-button:hover,
+.green-button:focus-visible {
   background-color: #6c9e42;
 }
 
-.blue-button:not(:disabled):active,
-.brown-button:not(:disabled):active,
-.green-button:not(:disabled):active {
+.grey-button:hover {
+  background-color: #e5e5e5;
+}
+
+.blue-button:focus-visible,
+.brown-button:focus-visible,
+.green-button:focus-visible {
+  outline: none;
+}
+
+.grey-button:focus-visible {
+  background-color: #e5e5e5;
+  outline: solid 3px #83b3d3;
+}
+
+.grey-button:active {
+  opacity: 0.8;
+}
+
+.blue-button:active,
+.brown-button:active,
+.green-button:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1168,6 +1291,7 @@ dialog::backdrop {
 }
 
 /* Input Styles */
+
 .input-text {
   background-color: #f2f2f2;
   border: none;
@@ -1191,6 +1315,7 @@ dialog::backdrop {
 }
 
 /* Chrome, Safari, Edge, Opera */
+
 .input-number::-webkit-outer-spin-button,
 .input-number::-webkit-inner-spin-button {
   -webkit-appearance: none;
