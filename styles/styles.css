@@ -235,6 +235,10 @@ button {
 
 /* Message */
 
+.message.invitation-section {
+  height: 246px;
+}
+
 .message {
   text-align: center;
 }
