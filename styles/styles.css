@@ -977,8 +977,7 @@ dialog::backdrop {
 .result-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 16px;
+  gap: 20px;
 }
 
 .result-item {
