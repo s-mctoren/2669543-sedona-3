@@ -249,6 +249,7 @@ button {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  margin: 0;
   margin-bottom: 20px;
 }
 
@@ -947,7 +948,6 @@ dialog::backdrop {
   font-weight: 700;
   line-height: 36px;
   margin: 0;
-  margin-right: 70px;
   text-transform: uppercase;
 }
 
@@ -994,7 +994,6 @@ dialog::backdrop {
 
 .result-view-list {
   display: flex;
-  margin-right: 70px;
   gap: 8px;
 }
 
@@ -1043,10 +1042,11 @@ dialog::backdrop {
 .result-item {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 340px;
   border: solid 1px #e5e5e5;
   padding: 20px;
-  gap: 20px;
+  gap: 16px;
 }
 
 .item-name {
@@ -1065,7 +1065,6 @@ dialog::backdrop {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  gap: 5px;
 }
 
 .rating-stars {
