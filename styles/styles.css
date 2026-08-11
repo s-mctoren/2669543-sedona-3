@@ -710,10 +710,6 @@ dialog::backdrop {
   align-items: center;
 }
 
-.breadcrumbs-item:active {
-  opacity: 0.3;
-}
-
 .breadcrumbs-item:not(:last-child)::after {
   content: "";
   display: block;
@@ -729,10 +725,15 @@ dialog::backdrop {
 .breadcrumbs-link {
   color: #ffffff;
 }
+
 .breadcrumbs-item:not(:last-child) .breadcrumbs-link:hover,
 .breadcrumbs-item:not(:last-child) .breadcrumbs-link:focus-visible {
   opacity: 0.6;
   cursor: pointer;
+}
+
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:active {
+  opacity: 0.3;
 }
 
 .icon-home {
