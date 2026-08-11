@@ -67,15 +67,17 @@
           <h2 class="visually-hidden">Преимущества</h2>
 
           <ul class="advantages-list">
-            <li class="advantages-item">
-              <h3 class="advantages-title white">Настоящий <br>городок</h3>
-              <hr class="advantages-divider">
-              <p class="advantages-description white">Седона — не аттракцион для <br>туристов, там течёт своя <br>жизнь
-              </p>
-            </li>
-            <li class="advantages-picture">
+            <li class="advantages-picture-container">
+              <div class="advantages-item">
+                <h3 class="advantages-title white">Настоящий <br>городок</h3>
+                <hr class="advantages-divider">
+                <p class="advantages-description white">Седона — не аттракцион для <br>туристов, там течёт своя
+                  <br>жизнь
+              </div>
               <img src="images/index/photo-1.jpg"
-                alt="Зелёная улочка Седоны с видом на гриль-бар и таверну 'Open Range'" width="800" height="385">
+                alt="Зелёная улочка Седоны с видом на гриль-бар и таверну 'Open Range'" width="800" height="385"
+                class="advantages-picture">
+              </p>
             </li>
             <li class="advantages-item">
               <h3 class="advantages-title">Небольшая <br>площадь</h3>
@@ -92,14 +94,16 @@
               <hr class="advantages-divider">
               <p class="advantages-description">Большинство едет в Гранд-<br>Каньон и толпится там</p>
             </li>
-            <li class="advantages-picture">
-              <img src="images/index/photo-2.jpg" alt="Красная каменная арка Моста Дьявола" width="800" height="385">
-            </li>
-            <li class="advantages-item">
-              <h3 class="advantages-title white">Там есть <br>мост дьявола</h3>
-              <hr class="advantages-divider">
-              <p class="advantages-description white">Да, по нему можно пройти! <br>Если вы осмелитесь, <br>разумеется
-              </p>
+            <li class="advantages-picture-container">
+              <img src="images/index/photo-2.jpg" alt="Красная каменная арка Моста Дьявола" width="800" height="385"
+                class="advantages-picture">
+              <div class="advantages-item">
+                <h3 class="advantages-title white">Там есть <br>мост дьявола</h3>
+                <hr class="advantages-divider">
+                <p class="advantages-description white">Да, по нему можно пройти! <br>Если вы осмелитесь, <br>разумеется
+                </p>
+              </div>
+
             </li>
           </ul>
         </section>
@@ -154,7 +158,8 @@
         <dialog id="search-dialog" class="search-dialog" popover>
           <div class="search-dialog-header">
             <h2 class="dialog-title">Поиск гостиницы в Седоне</h2>
-            <button popovertarget="search-dialog" popovertargetaction="hide" class="close-button grey-button" type="button">
+            <button popovertarget="search-dialog" popovertargetaction="hide" class="close-button grey-button"
+              type="button">
               <span class="visually-hidden">Закрыть диалог</span>
             </button>
           </div>
@@ -173,14 +178,14 @@
             </div>
             <label for="adults-number" class="search-dialog-label">Взрослые:</label>
             <span class="input-number-container">
-              <button class="minus-button grey-button">
+              <button class="minus-button grey-button" type="button">
                 <span class="visually-hidden">
                   Убрать один
                 </span>
               </button>
               <input type="number" name="adults-number" id="adults-number" value="2"
                 class="search-dialog-input search-dialog-input-number input-text input-number">
-              <button class="plus-button grey-button">
+              <button class="plus-button grey-button" type="button">
                 <span class="visually-hidden">
                   Добавить один
                 </span>
@@ -189,23 +194,23 @@
             <div class="children-container">
               <div class="children-label-container">
                 <label for="children-number" class="search-dialog-label">Дети:</label>
-                <span class="icon-info">
+                <button class="icon-info" type="button">
                   <span class="visually-hidden">info children</span>
                   <span class="children-tooltip" role="tooltip">
                     Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
                     размещаются бесплатно.
                   </span>
-                </span>
+                </button>
               </div>
               <span class="input-number-container">
-                <button class="minus-button grey-button">
+                <button class="minus-button grey-button" type="button">
                   <span class="visually-hidden">
                     Убрать один
                   </span>
                 </button>
                 <input type="number" name="children-number" id="children-number" value="2"
                   class="search-dialog-input search-dialog-input-number input-text input-number">
-                <button class="plus-button grey-button">
+                <button class="plus-button grey-button" type="button">
                   <span class="visually-hidden">
                     Добавить один
                   </span>
@@ -225,7 +230,8 @@
           <ul class="socials-list">
             <li class="socials-item">
               <a class="socials-link" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">
-                <svg role="img" aria-label="ВКонтакте" width="24" height="14" viewBox="0 0 24 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <svg role="img" aria-label="ВКонтакте" width="24" height="14" viewBox="0 0 24 14" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z" />
                 </svg>
@@ -233,7 +239,8 @@
             </li>
             <li class="socials-item">
               <a class="socials-link" href="https://t.me/htmlacademy" target="_blank" rel="noopener noreferrer">
-                <svg role="img" aria-label="Telegram" width="18" height="16" viewBox="0 0 18 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <svg role="img" aria-label="Telegram" width="18" height="16" viewBox="0 0 18 16" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M16.785 0.0992597L0.840489 6.24776C-0.247661 6.68481 -0.241365 7.29184 0.640845 7.56253L4.73445 8.83953L14.2058 2.8637C14.6537 2.59121 15.0629 2.7378 14.7265 3.03636L7.05283 9.96185H7.05103L7.05283 9.96275L6.77045 14.1823C7.18413 14.1823 7.36669 13.9925 7.59871 13.7686L9.58705 11.8351L13.7229 14.89C14.4855 15.31 15.0332 15.0941 15.2229 14.1841L17.9379 1.38885C18.2158 0.274623 17.5126 -0.229883 16.785 0.0992597Z" />
                 </svg>
@@ -242,7 +249,8 @@
             <li class="socials-item">
               <a class="socials-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
                 rel="noopener noreferrer">
-                <svg role="img" aria-label="YouTube" width="22" height="17" viewBox="0 0 22 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <svg role="img" aria-label="YouTube" width="22" height="17" viewBox="0 0 22 17" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M18.607 0H3.17413C1.31343 0 0 1.59375 0 3.4V13.4937C0 15.4062 1.31343 17 3.17413 17H18.8259C20.4677 17 22 15.4062 22 13.6V3.4C21.7811 1.59375 20.4677 0 18.607 0ZM7.66169 12.5375V4.4625L14.995 8.5L7.66169 12.5375Z" />
                 </svg>
@@ -260,7 +268,8 @@
           <h2 class="visually-hidden">Разработчик сайта</h2>
           <a class="developer-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
             rel="noopener noreferrer">
-            <svg class="logo-developer" role="img" aria-label="HTML Academy" xmlns="http://www.w3.org/2000/svg" width="115" height="34" viewBox="0 0 115 34" fill="currentColor">
+            <svg class="logo-developer" role="img" aria-label="HTML Academy" xmlns="http://www.w3.org/2000/svg"
+              width="115" height="34" viewBox="0 0 115 34" fill="currentColor">
               <path
                 d="M0 13.26v2.6h2.5v-2.6zm11.6-8.4c-1.6 0-2.8.7-3.6 1.7h-.1V.36h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9m15 .3h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8zm14.5-.2c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3m6.7 8.1c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.36h-2zm-18.9 7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6m18.9-5.1c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1zm10.9-2.3c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6m17.2-7.3c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6m13.2-9.2c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3m0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6m19.9-1.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4m11.2 9.1-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1z" />
             </svg>
