@@ -73,11 +73,11 @@
                 <hr class="advantages-divider">
                 <p class="advantages-description white">Седона — не аттракцион для <br>туристов, там течёт своя
                   <br>жизнь
+                </p>
               </div>
               <img src="images/index/photo-1.jpg"
                 alt="Зелёная улочка Седоны с видом на гриль-бар и таверну 'Open Range'" width="800" height="385"
                 class="advantages-picture">
-              </p>
             </li>
             <li class="advantages-item">
               <h3 class="advantages-title">Небольшая <br>площадь</h3>
@@ -167,13 +167,13 @@
             <label for="check-in-date" class="search-dialog-label">Дата заезда:</label>
             <div class="search-dialog-container-long">
               <input type="text" name="check-in-date" id="check-in-date" value="27 апреля 2020"
-                class="search-dialog-input search-dialog-input-date input-text">
+                class="search-dialog-input search-dialog-input-date input-text" required>
               <p class="dialog-message error">Мы не можем отправить вас в прошлое.</p>
             </div>
             <label for="check-out-date" class="search-dialog-label">Дата выезда:</label>
             <div class="search-dialog-container-long">
               <input type="text" name="check-out-date" id="check-out-date" value="1 сентября 2023"
-                class="search-dialog-input search-dialog-input-date input-text">
+                class="search-dialog-input search-dialog-input-date input-text" required>
               <p class="dialog-message info">На эти даты есть свободные номера. Пока есть.</p>
             </div>
             <label for="adults-number" class="search-dialog-label">Взрослые:</label>
@@ -184,7 +184,7 @@
                 </span>
               </button>
               <input type="number" name="adults-number" id="adults-number" value="2"
-                class="search-dialog-input search-dialog-input-number input-text input-number">
+                class="search-dialog-input search-dialog-input-number input-text input-number" required>
               <button class="plus-button grey-button" type="button">
                 <span class="visually-hidden">
                   Добавить один

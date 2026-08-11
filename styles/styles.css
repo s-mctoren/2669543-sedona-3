@@ -77,11 +77,18 @@ body {
 /* Page Header */
 
 .page-header {
+  position: relative;
   display: flex;
   justify-content: center;
-  height: 64px;
+  min-height: 64px;
   gap: 30px;
   padding: 0 70px;
+}
+
+.page-header .logo {
+  position: absolute;
+  top: 0;
+  left: 70px;
 }
 
 .page-header .logo:hover {
@@ -100,17 +107,26 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-left: 168px;
 }
 
 .navigation-menu-list,
 .navigation-controls-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.navigation-menu-list {
+  max-width: 604px;
+}
+
+.navigation-controls-list {
+  max-width: 268px;
 }
 
 .navigation-menu-item {
@@ -154,10 +170,17 @@ body {
   opacity: 0.3;
 }
 
+.navigation-controls-link {
+  display: inline-block;
+}
+
 .icon-link:hover,
-.icon-link:focus-visible,
-.icon-link:active {
+.icon-link:focus-visible {
   opacity: 0.6;
+}
+
+.icon-link:active {
+  opacity: 0.3;
 }
 
 .icon-link:focus-visible {
@@ -205,8 +228,9 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  max-width: 250px;
   padding: 8px 34px;
-  margin-left: 20px;
+  margin: 7px 0 7px 20px;
   border-radius: 4px;
   background-color: #756157;
 }
@@ -859,6 +883,10 @@ dialog::backdrop {
 .range-button:focus-visible {
   background-color: #e5e5e5;
   outline: solid 3px #83b3d3;
+}
+
+.range-button:active {
+  background-color: #c5c5c5;
 }
 
 .range-button.button-max {
