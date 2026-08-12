@@ -878,16 +878,17 @@ dialog::backdrop {
 }
 
 .range-button:hover {
-  background-color: #e5e5e5;
+  box-shadow: 0 4px 10px 0 #00000040;
 }
 
 .range-button:focus-visible {
-  background-color: #e5e5e5;
-  outline: solid 3px #83b3d3;
+  outline: 3px solid #83b3d3;
+  box-shadow: 0 4px 10px 0 #00000040;
 }
 
 .range-button:active {
-  background-color: #c5c5c5;
+  outline: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px 0 #00000066;
 }
 
 .range-button.button-max {
